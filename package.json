@@ -1,0 +1,36 @@
+{
+  "name": "backend-online-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WalidAlrefai/backend-online-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WalidAlrefai/backend-online-shop/issues"
+  },
+  "homepage": "https://github.com/WalidAlrefai/backend-online-shop#readme",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jest": "^28.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.18",
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.2",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "supertest": "^6.2.4"
+  }
+}
