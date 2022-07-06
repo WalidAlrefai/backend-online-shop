@@ -13,8 +13,8 @@ const basicAuth = async (req, res, next) => {
             throw new Error('No authorization header');
         }
         let basicAuth = base64.decode(basicAuthText.split(' ')[1]);
-        let [username, password] = basicAuth.split(':');
-        let User = await userModel.findOne({username});
+        let [userName, password] = basicAuth.split(':');
+        let User = await userModel.findOne({where: { userName: userName }});
         if(!User){
             throw new Error('User not found');
         }

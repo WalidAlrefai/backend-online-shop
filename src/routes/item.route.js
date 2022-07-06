@@ -1,7 +1,7 @@
 'use strict';
 const router = require('express').Router();
 const bearerAuth = require('../middlewares/bearer');
-const {itemModel, userModel} = require('../models/index')
+const {itemModel} = require('../models/index')
 
 router.post('/createItem',bearerAuth,async(req,res)=>{
     let{itemName,itemImage,itemDescription,itemPrice,userId}=req.body

@@ -7,6 +7,7 @@ const errorHandler = require('./error-handlers/500');
 const signup = require('./routes/signup.route');
 const signin = require('./routes/signin.route');
 const item = require('./routes/item.route')
+const favorite = require('./routes/favorite.route')
 
 
 
@@ -21,6 +22,7 @@ app.use(express.json());
 app.use(signup);
 app.use(signin);
 app.use(item);
+app.use(favorite);
 
 
 app.use(notFoundHandler)
